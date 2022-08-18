@@ -9,7 +9,7 @@ const ExperiencePages = () => {
       <h4 className="fw-bold mb-5">Where have I worked and contributed?</h4>
       <Tab.Container id="left-tabs" defaultActiveKey="1">
         <Row>
-          <Col sm={5}>
+          <Col sm={5} className="mb-3">
             <Nav variant="pills" className="flex-column">
               {workExperience.results.map((exp) => {
                 return (
@@ -22,7 +22,7 @@ const ExperiencePages = () => {
               })}
             </Nav>
           </Col>
-          <Col sm={7}>
+          <Col sm={7} className="mb-3">
             {workExperience.results.map((exp) => {
               return (
                 <Tab.Content key={exp.id}>

@@ -28,7 +28,7 @@ const Header = () => {
             alt="logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <div className="order-lg-2 d-flex justify-content-between">
           {/* <Nav.Link as={Link} to="/login">
             Log in

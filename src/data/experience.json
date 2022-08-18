@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "employer": "PT Bank Rakyat Indonesia Tbk",
+      "position": "Full Stack Developer",
+      "job_desc": [
+        "Developing an application starts with processing, analyzing and visually rendering data.",
+        "Plan, write and debug web applications and software with complete accuracy.",
+        "Managed time-sensitive updates, including content changes.",
+        "Deploy and maintain web applications.",
+        "Coordinate with the team and product owners.",
+        "Implementation of applications from concept to implementation.",
+        "User manual, UT (Unit Test), UIT (Unit Integration Test), UAT (User Accepted Test).",
+        "Tools used are HTML, CSS, Javascript, Jquery, React Js, PHP, My SQL, Jira, Confluence, GIT, BitBucket, Sonarbaque, SAST"
+        
+      ],
+      "start_date": "2022-09-01",
+      "end_date": ""
+    },
+    {
+      "id": 2,
+      "employer": "PPM Management",
+      "position": "Full Stack Developer",
+      "job_desc": [
+        "Applying new technologies and making recommendations to improve IT processes.",
+        "Ensuring efficiency, effectiveness and viability.",
+        "Designing, creating and developing web applications.",
+        "Maintain, optimize, troubleshoot and improve web applications.",
+        "Implementation of applications from concept to implementation.",
+        "Manage server infrastructure, and networks with third parties.",
+        "Tools used are HTML, CSS, Javascript, Jquery, Vue Js, PHP (Laravel, Codeigniter), My SQL, WinSCP."
+      ],
+      "start_date": "2017-01-09",
+      "end_date": "2022-01-03"
+    },
+    {
+      "id": 3,
+      "employer": "PT Reycom Document Solusi",
+      "position": "IT Engineer",
+      "job_desc": [
+        "Develop and implement telesales system applications.",
+        "Set up, manage 200 workstations and 4 windows server 99% up-time.",
+        "Security hardening on workstations and servers according to current settings.",
+        "Managed infrastructure server, network, mail server, voip and FO."
+      ],
+      "start_date": "2015-07-01",
+      "end_date": "2017-01-09"
+    },
+    {
+      "id": 4,
+      "employer": "PT Mulia Multi Solusi",
+      "position": "IT Engineer",
+      "job_desc": [
+        "Develop and implement a hospital management information system.",
+        "Managed Infrastructure servers, networks, and workstations."
+      ],
+      "start_date": "2012-08-10",
+      "end_date": "2015-07-01"
+    },
+    {
+      "id": 5,
+      "employer": "Puriasih Hospital Group",
+      "position": "IT Supervisor",
+      "job_desc": [
+        "Building a hospital management information system.",
+        "Identify and quickly identify hospital management information system needs.",
+        "Branch supervision application implementation."
+      ],
+      "start_date": "2011-04-05",
+      "end_date": "2012-08-10"
+    }
+  ]
+}

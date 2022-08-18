@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { useLocation, Outlet } from "react-router-dom";
+import Header from "./components/templates/Navbar";
+import Footer from "./components/templates/Footer";
+import ThemeProvider from "react-bootstrap/ThemeProvider";
+import BoxRight from "./components/templates/BoxRight";
 
-function App() {
+const App = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
+  useEffect(() => {
+    const navHeader = document.getElementById("nav-header");
+    const handleScroll = (event) => {
+      if (typeof navHeader !== null && navHeader !== "undefined") {
+        window.scrollY > 50
+          ? navHeader.classList.add("header-bg")
+          : navHeader.classList.remove("header-bg");
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider
+        breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+        minBreakpoint="xxs"
+      >
+        <Header />
+        <BoxRight />
+        <Outlet />
+        <Footer />
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
